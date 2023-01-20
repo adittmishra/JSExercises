@@ -2,17 +2,28 @@
 // - Use Array methods
 // - Do not use loops
 
-// Example of inputArray
-/*
-	[
+
+function findVoteEligibleCandidates(populationList) {
+	populationList.forEach(element => {
+		if(element.age>=18)
+			console.log(element.name)				
+	});
+}
+
+
+
+if(require !== 'undefined' && require.main ===module){
+
+	pop = [
 		{
 			name:"Ravi",
 			age:28
 		},
 		{
 			name:"Teja",
-			age:28
+			age:8
 		}
-	]
-*/
-function findVoteEligibleCandidates(populationList) {}
+	];
+
+	findVoteEligibleCandidates(pop);
+}

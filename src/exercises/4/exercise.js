@@ -3,7 +3,7 @@
 //  - Comment its uses.
 
 function greeting(firstName, lastName) {
-  let welcomeGreeting;
+  let welcomeGreeting = `Welcome ${firstName} ${lastName}!`;
 
   console.log(welcomeGreeting);
 }
