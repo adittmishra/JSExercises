@@ -5,7 +5,7 @@ function checkIfArray(input) {
   let isInputAnArray = false;
 
   //... Used: Array.isArray() property
-  isInputAnArray = Array.isArray(input)
+  isInputAnArray = Array.isArray(input);
 
   if (isInputAnArray) {
     console.log("Given input is an Array");

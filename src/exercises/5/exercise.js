@@ -11,4 +11,4 @@ function binaryToDecimal(binaryString) {
   );
 }
 
-binaryToDecimal('0101')
+binaryToDecimal('0101');

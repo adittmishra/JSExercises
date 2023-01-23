@@ -9,7 +9,7 @@ function divideTenByNumber(number) {
   // As a result Log statement can't see it.
 
   // SOLUTION
-  let result = 0
+  let result = 0;
 
   if (number != 0) {
     result = 10 / number;
@@ -20,4 +20,4 @@ function divideTenByNumber(number) {
   console.log(`Result after dividing 10 by ${number} is ${result}`);
 }
 
-divideTenByNumber(0)
+divideTenByNumber(0);

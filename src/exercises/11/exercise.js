@@ -3,7 +3,7 @@
 // - Do not use loops
 
 function sumOfArray(inputArray) {
-    return inputArray.reduce((acc, curr) => acc + curr, 0)
+    return inputArray.reduce((acc, curr) => acc + curr, 0);
 }
 
 

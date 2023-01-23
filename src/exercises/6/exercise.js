@@ -3,13 +3,14 @@
 
 function findTheLength(inputArray) {
   let lengthOfArray;
-  if(Array.isArray(inputArray)){
-    lengthOfArray = inputArray.length
+
+  if(Array.isArray(inputArray)) {
+    lengthOfArray = inputArray.length; 
     console.log(`Length of the given input array is ${lengthOfArray}`);
-  }else{
-    throw TypeError('Input is not of type Array')
+  } else {
+    throw TypeError('Input is not of type Array');
   }
 }
 
 
-findTheLength([0])
+findTheLength([0]);

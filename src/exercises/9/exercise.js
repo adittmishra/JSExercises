@@ -10,6 +10,6 @@ function multiplyArrayByTwo(inputArray) {
 }
 
 if(require !== 'undefined' && require.main === module){
-  res = multiplyArrayByTwo([1,4,2])
-  console.log(`Output ${res}`)
+  res = multiplyArrayByTwo([1,4,2]);
+  console.log(`Output ${res}`);
 }

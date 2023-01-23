@@ -9,4 +9,4 @@ function printOneToTen() {
   }
 }
 
-printOneToTen()
+printOneToTen();
