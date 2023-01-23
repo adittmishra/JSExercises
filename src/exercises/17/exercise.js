@@ -1,7 +1,6 @@
 // Extend the Leave class, to create different classes for different Leave types.
-import {Leave} from '~/src/exercises/16/exercise.js'
+const {Leave} = require('../16/exercise.js');
 
-// console.log(new Leave(121, '2012-12-01', '2013-01-01'))
 
 class SickLeave extends Leave{
     constructor(type){
