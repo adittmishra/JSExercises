@@ -32,6 +32,41 @@
     "uct": 330,
     "website": "http://www.hyderabad.aero/"
 }
-
-
 */
+
+class Airport {
+    getInfoFromIATA = (iata_code) => {
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '4f6c947cfbmsh40b7bbd9eb0c8fap1bd2c1jsn09b9773153a8',
+                'X-RapidAPI-Host': 'airport-info.p.rapidapi.com'
+            }
+        };
+        
+        fetch(`https://airport-info.p.rapidapi.com/airport?iata=${iata_code}`, options)
+            .then(response => response.json())
+            .then(response => console.log(`IATA: ${response.iata}`))
+            .catch(err => console.error(err));
+
+    } 
+
+    getInfoFromICAO = (icao_code) => {
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '4f6c947cfbmsh40b7bbd9eb0c8fap1bd2c1jsn09b9773153a8',
+                'X-RapidAPI-Host': 'airport-info.p.rapidapi.com'
+            }
+        };
+        
+        fetch(`https://airport-info.p.rapidapi.com/airport?icao=${icao_code}`, options)
+            .then(response => response.json())
+            .then(response => console.log(`ICAO: ${response.icao}`))
+            .catch(err => console.error(err));
+    }
+}
+
+
+new Airport().getInfoFromIATA('BBI')
+// new Airport().getInfoFromICAO('BBI')

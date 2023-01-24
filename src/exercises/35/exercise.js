@@ -11,9 +11,14 @@ const employeeRavi = {
 };
 
 function getExperienceOfRavi() {
-  if (employeeRavi.getExperience) {
+  // - Modied the function to use optional chaining.
+  if (employeeRavi?.getExperience) {
     console.log(employeeRavi.getExperience());
+  }
+  if (employeeRavi?.firstName) {
+    console.log(employeeRavi.firstName);
   }
 }
 
-// - Modify the above function to use optional chaining.
+
+getExperienceOfRavi();
