@@ -10,4 +10,5 @@ function calculateVolume(length) {
   }
 }
 
-console.log(calculateVolume(2)(2)(2));
+
+module.exports = { calculateVolume }

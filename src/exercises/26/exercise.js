@@ -1,6 +1,8 @@
 // Create a Counter using closures.
 // - counter should have "increment","decrement" and "value" functions.
 
+const exp = require("constants");
+
 // - Is there a anonymus function used here? Is so where is it?
 // Answer: Yes, they are commented below.
 
@@ -30,11 +32,5 @@ const counter = (function () {
   }
 })();
 
-console.log(counter.value());
-counter.increment();
-counter.increment();
-console.log(counter.value());
-counter.decrement();
-console.log(counter.value());
 
-
+module.exports = { counter }

@@ -4,10 +4,10 @@
 
 
 function findVoteEligibleCandidates(populationList) {
-	populationList.forEach(element => {
+	return populationList.map(element => {
 		if(element.age>=18)
-			console.log(element.name)				
-	});
+			return element.name			
+	}).filter(item=>item!=undefined);
 }
 
 
@@ -25,5 +25,8 @@ if(require !== 'undefined' && require.main ===module){
 		}
 	];
 
-	findVoteEligibleCandidates(pop);
+	console.log(findVoteEligibleCandidates(pop));
 }
+
+
+module.exports = { findVoteEligibleCandidates }

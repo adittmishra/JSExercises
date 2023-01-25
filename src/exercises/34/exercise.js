@@ -13,3 +13,6 @@ function multiply(num1=1, num2=1) {
 // After the change
 console.log(multiply(4)); // - Should return 4
 console.log(multiply()); // - Should return 1
+
+
+module.exports = { multiply }

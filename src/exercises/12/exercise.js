@@ -21,4 +21,4 @@ function errorCaller() {
 }
 
 
-errorCaller();
+module.exports = { errorCaller };

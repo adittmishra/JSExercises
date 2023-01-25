@@ -10,3 +10,6 @@ function printOneToTen() {
 }
 
 printOneToTen();
+
+
+module.exports = { printOneToTen }

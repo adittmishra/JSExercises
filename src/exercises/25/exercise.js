@@ -16,4 +16,4 @@ let someFunc = function (x) {
     }
 }
 
-console.log(someFunc(5)(2));
+module.exports = { someFunc };

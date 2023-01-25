@@ -11,3 +11,6 @@ function printArray(inputArray) {
 if(require !== 'undefined' && require.main === module){
     printArray([1,4,5,2]);
 }
+
+
+module.exports = { printArray }

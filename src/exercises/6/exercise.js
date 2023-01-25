@@ -6,11 +6,11 @@ function findTheLength(inputArray) {
 
   if(Array.isArray(inputArray)) {
     lengthOfArray = inputArray.length; 
-    console.log(`Length of the given input array is ${lengthOfArray}`);
+    return `Length of the given input array is ${lengthOfArray}`;
   } else {
-    throw TypeError('Input is not of type Array');
+    return 'Input is not of type Array';
   }
 }
 
 
-findTheLength([0]);
+module.exports = { findTheLength }

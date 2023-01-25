@@ -9,4 +9,4 @@ const employee = {
   checkVoteEligiblity: function () {return this.age>=18 ? 'Eligible' : 'Un-Elgible'},
 };
 
-console.log(employee.checkVoteEligiblity());
+module.exports = employee.checkVoteEligiblity;

@@ -7,5 +7,4 @@ function sumOfArray(inputArray) {
 }
 
 
-res = sumOfArray([1,5,7]);
-console.log(`Sum is ${res}`);
+module.exports = { sumOfArray }

@@ -18,4 +18,6 @@ const newEmployee = {
   getFullName: employee.getFullName,
 };
 
-console.log(newEmployee.getFullName());
+
+
+module.exports = { newEmployee } ;

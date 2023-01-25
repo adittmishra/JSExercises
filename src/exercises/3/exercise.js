@@ -8,8 +8,10 @@ function checkIfArray(input) {
   isInputAnArray = Array.isArray(input);
 
   if (isInputAnArray) {
-    console.log("Given input is an Array");
+    return "Given input is an Array";
   } else {
-    console.log("Given input is not an Array");
+    return "Given input is not an Array";
   }
 }
+
+module.exports = { checkIfArray }
